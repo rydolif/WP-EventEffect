@@ -1,7 +1,6 @@
 
-	<section class="hero" style="background-image: url(<?php the_field('hero__bg'); ?>);">
+	<section class="hero hero--services" style="background-image: url(<?php the_field('hero__bg'); ?>);">
 		<div class="container">
-			
 
 			<div class="hero__arrow">
 				<a href="#info"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" alt=""></a>

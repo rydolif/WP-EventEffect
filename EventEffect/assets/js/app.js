@@ -225,14 +225,34 @@ document.addEventListener("DOMContentLoaded", function() {
 		};
 		tabs('.tabs', '.tabs__item', '.tabs__wrap', 'active');
 
-		var typed = new Typed('.sity', {
-			strings: ["в Москве", "в Санкт Петербурге", "в Ярославле", "в Костроме", "в Твери", "в Туле", "в Нижнем Новгороде", "в Казани", "в Воронеже"],
-			typeSpeed: 200,
-			backSpeed: 50,
-			shuffle: true,
-			smartBackspace: false,
-			loop: true
-		});
+
+		const sity = document.querySelector('.sity');
+		if (sity) {
+			var typed = new Typed(sity, {
+				strings: ["в Москве", "в Санкт Петербурге", "в Ярославле", "в Костроме", "в Твери", "в Туле", "в Нижнем Новгороде", "в Казани", "в Воронеже"],
+				typeSpeed: 200,
+				backSpeed: 50,
+				shuffle: true,
+				smartBackspace: false,
+				loop: true
+			});
+		}
+
+		const tag_s = document.querySelector('.hero--services h1 span');
+		if (tag_s) {
+			var typed2 = new Typed(tag_s, {
+				strings: ["Корпоратив", "Выставку", "Промо мероприятие", "Event", "Свадьбу", "Спортивное мероприятие", "Выпускной", "День рождения"],
+				typeSpeed: 200,
+				backSpeed: 50,
+				shuffle: true,
+				smartBackspace: false,
+				loop: true
+			});
+		}
+
+		// const tag_new = document.querySelector('.typed-cursor');
+		// tag_new.insertAdjacentHTML('afterend', '</br>');
+
 
 });
 	

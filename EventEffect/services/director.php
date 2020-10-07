@@ -1,10 +1,12 @@
 
-
+<?php if( get_field('director__title') ): ?>
+<?php if( get_field('director__content') ): ?>
+<?php if( get_field('director__img') ): ?>
 	<section class="director director--no-bg">
 		<div class="director__container container">
 
 			<div class="director__description">
-				<h2 class="director__title"><?php the_field('director__title'); ?></span></h2>
+				<?php the_field('director__title'); ?>
 				<div class="director__text">
 					<?php the_field('director__content'); ?>
 				</div>
@@ -26,3 +28,6 @@
 
 		</div>
 	</section>
+<?php endif; ?>
+<?php endif; ?>
+<?php endif; ?>

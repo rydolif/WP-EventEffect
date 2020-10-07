@@ -1,4 +1,8 @@
 
+
+<?php if( get_field('content') ): ?>
+<?php if( get_field('gallery') ): ?>
+<?php if( get_field('iframe') ): ?>
 	<section class="description">
 		<div class="parallax parallax__circle"></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/parallax1.png" alt="" class="parallax parallax__arrow-left">
@@ -51,8 +55,8 @@
 
 		</div>
 	</section>
-
-
-
+<?php endif; ?>
+<?php endif; ?>
+<?php endif; ?>
 
 

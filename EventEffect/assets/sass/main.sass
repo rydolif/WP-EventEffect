@@ -556,7 +556,7 @@
 
 .info
 	background-color: #f8f7f7
-	padding-top: 30px
+	padding: 30px 0
 	z-index: 1
 
 	+r(992)
@@ -647,7 +647,7 @@
 	background-size: contain
 	background-repeat: no-repeat
 	background-position: bottom center
-	padding: 100px 0 140px
+	padding: 70px 0 120px
 
 	+r(1200)
 		padding: 130px 0 70px
@@ -672,7 +672,7 @@
 			width: 100%
 			margin-bottom: 15px
 
-	&__title
+	&__title, h2
 		font-size: 42px
 		margin-bottom: 25px
 
@@ -1552,7 +1552,7 @@
 
 //------SERVICES---------
 .description
-	padding: 100px 0 150px
+	padding: 70px 0 120px
 	background-color: #f8f7f7
 	background-image: url(../img/description__bg.png)
 	background-size: contain
@@ -1793,21 +1793,26 @@
 		margin-bottom: 25px
 
 	&__list
-		+between
-		align-items: flex-start
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -15px
 
-		+r(767)
-			justify-content: space-around
+		+r(576)
+			margin: 0
 
 	&__item
-		width: 31%
+		width: 33.333%
+		padding: 0 15px
 
 		+r(767)
-			width: 48%
+			width: 50%
 			margin-bottom: 25px
-		
+			max-width: 320px
+
 		+r(576)
 			width: 100%
+			padding: 0
+			margin: 0 auto 20px
 
 	&__img
 		width: 100%
@@ -1855,7 +1860,7 @@
 
 
 .included
-	padding: 70px 0
+	padding: 70px 0 50px
 
 	+r(992)
 		padding: 40px 0
@@ -1873,21 +1878,28 @@
 		margin-bottom: 25px
 
 	&__list
-		+between
-		align-items: flex-start
+		display: flex
+		flex-wrap: wrap
+		margin: 0 15px
 
 		+r(767)
 			justify-content: space-around
 
-	&__item
-		width: 23%
+		+r(576)
+			margin: 0
 
-		+r(767)
-			width: 48%
+	&__item
+		width: 25%
+		padding: 0 15px
+		margin-bottom: 25px
+
+		+r(992)
+			width: 50%
 			margin-bottom: 25px
 		
 		+r(576)
 			width: 100%
+			padding: 0
 
 		&:last-child
 			+r(767)
