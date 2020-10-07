@@ -19,7 +19,7 @@
 						<span></span>
 						<img src="<?php echo $img; ?>" alt="">
 					</div>
-					<div>
+					<div class="work__content">
 						<p><b><?php echo $title; ?></b></p>
 						<p>
 							<?php echo $text; ?>

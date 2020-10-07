@@ -388,6 +388,7 @@
 					left: 50%
 					transform: translate(-50%, 0)
 					text-align: center
+					width: 100vw
 
 				li
 					padding: 0
@@ -462,7 +463,7 @@
 		background-attachment: auto
 
 	+r(992)
-		text-align: center
+		min-height: auto
 		padding: 100px 0
 
 	+r(576)
@@ -514,7 +515,6 @@
 		font-size: 48px
 		color: #ffffff
 
-		
 		+r(992)
 			max-width: 100%
 		
@@ -523,7 +523,6 @@
 		
 		+r(480)
 			font-size: 26px
-			margin-bottom: 20px
 
 		span, b, strong
 			color: $accent
@@ -589,6 +588,9 @@
 			width: 50%
 
 		+r(480)
+			display: flex
+			align-items: center
+			text-align: left
 			width: 100%
 			margin-bottom: 20px
 
@@ -613,6 +615,7 @@
 			+r(992)
 				&::before
 					display: none
+
 		&:first-child
 			+r(992)
 				margin-bottom: 25px
@@ -627,6 +630,15 @@
 		+r(992)
 			height: 70px
 			margin-bottom: 10px
+		
+		+r(480)
+			height: 60px
+			margin-right: 20px
+			margin-bottom: 0
+
+	br
+		+r(480)
+			display: none
 
 
 .director
@@ -774,6 +786,7 @@
 
 		+r(480)
 			text-align: center
+			margin-bottom: 20px
 
 		&:hover
 			color: $text
@@ -787,6 +800,9 @@
 		width: 100%
 		border-radius: 10px
 		margin-bottom: 10px
+
+		+r(480)
+			margin-bottom: 5px
 
 		&::before
 			content: ''
@@ -899,6 +915,10 @@
 		+cover
 		padding-bottom: 40px
 
+	+r(767)
+		background-size: cover
+		background-position: -150px bottom
+
 	&__container
 		+between
 
@@ -923,6 +943,9 @@
 	&__title
 		@extend .director__title
 		margin-bottom: 20px
+
+		+r(480)
+			margin-bottom: 10px
 
 	&__subtitle
 		font-size: 24px
@@ -1517,14 +1540,14 @@
 		transform: translate(-50%, -50%) rotate(180deg)
 
 		+r(576)
-			transform: translate(-50%, -50%)
+			left: 15px
 
 	&__next
 		right: 0
 		transform: translate(50%, -50%)
 
 		+r(576)
-			transform: translate(-50%, -50%) rotate(180deg)
+			right: 15px
 
 
 //------SERVICES---------
@@ -1642,14 +1665,11 @@
 			text-align: center
 		
 		+r(767)
-			width: 48%
-			margin-bottom: 15px
-		
-		+r(480)
 			width: 100%
+			margin-bottom: 15px
 
 		&:last-child
-			+r(480)
+			+r(767)
 				margin-bottom: 0
 
 	&__img
@@ -1665,6 +1685,13 @@
 			width: 70%
 			margin: 0 auto 10px
 
+		+r(767)
+			width: 20%
+			margin-right: 5%
+
+		+r(480)
+			width: 30%
+
 		img
 			width: 100%
 			max-width: 160px
@@ -1674,6 +1701,9 @@
 
 			+r(992)
 				width: 50%
+
+			+r(767)
+				width: 100%
 
 		span
 			position: absolute
@@ -1703,11 +1733,20 @@
 				left: 5px
 			
 			+r(992)
-				left: 23%
+				left: 20%
 			
 			+r(480)
-				width: 30px
-				height: 30px
+				left: 10%
+
+	&__content
+		width: 100%
+
+		+r(767)
+			width: 75%
+			text-align: left
+
+		+r(480)
+			width: 65%
 
 	p
 		margin-bottom: 10px
@@ -1818,12 +1857,16 @@
 .included
 	padding: 70px 0
 
+	+r(992)
+		padding: 40px 0
+
 	img
 		height: 50px
 		margin-bottom: 15px
 
 		+r(576)
-			margin-bottom: 10px
+			margin-bottom: 0
+			margin-right: 20px
 
 	&__title
 		@extend .director__title
@@ -1845,7 +1888,6 @@
 		
 		+r(576)
 			width: 100%
-			text-align: center
 
 		&:last-child
 			+r(767)
@@ -1854,6 +1896,14 @@
 	&__subtitle
 		font-size: 18px
 		margin-bottom: 10px
+
+		+r(576)
+			margin-bottom: 0
+
+	&__wrap
+		+r(576)
+			display: flex
+			margin-bottom: 10px
 
 
 .additional
@@ -1891,7 +1941,7 @@
 		align-items: flex-start
 
 		+r(767)
-			justify-content: space-around
+			justify-content: space-between
 
 	&__item
 		width: 23%
@@ -1901,8 +1951,7 @@
 			margin-bottom: 25px
 		
 		+r(576)
-			width: 100%
-			text-align: center
+			margin-bottom: 15px
 
 
 .wrapp-button
@@ -2334,8 +2383,15 @@
 			border-right: 4px solid transparent
 			border-top: 4px solid transparent
 
+
 .form-group
 	position: relative
 
+
 .help-block
 	margin: 0 auto !important
+
+
+.caldera-grid .row
+	+r(767)
+		margin: 0

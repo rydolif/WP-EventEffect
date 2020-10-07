@@ -16,8 +16,10 @@
 					?>
 
 					<div class="included__item">
-						<img src="<?php echo $img; ?>" alt="">
-						<h3 class="included__subtitle"><?php echo $title; ?></h3>
+						<div class="included__wrap">
+							<img src="<?php echo $img; ?>" alt="">
+							<h3 class="included__subtitle"><?php echo $title; ?></h3>
+						</div>
 						<p><?php echo $text; ?></p>
 					</div>
 
