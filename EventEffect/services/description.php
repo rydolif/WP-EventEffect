@@ -29,9 +29,14 @@
 							$tab__text = get_sub_field('tab__text');
 							$tab__img = get_sub_field('tab__img');
 						?>
+
 							<div class="description__tabs_item tabs__item">
-								<img src="<?php echo $tab__img; ?>" alt="">
-								<p><?php echo $tab__text; ?></p>
+								<?php if ($tab__img) { ?>
+									<img src="<?php echo $tab__img; ?>" alt="">
+								<?php }  ?>
+								<?php if ($tab__text) { ?>
+									<p><?php echo $tab__text; ?></p>
+								<?php }  ?>
 							</div>
 						<?php endwhile; ?>
 					</div>
