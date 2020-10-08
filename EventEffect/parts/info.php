@@ -10,17 +10,17 @@
 
 				<div class="info__item">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/info__icon3.svg" alt="">
-					<p>Уже более 7 лет <br>дерим позитивные <br>эмоции</p>
+					<p>Уже более 7 лет <br>дарим позитивные <br>эмоции</p>
 				</div>
 
 				<div class="info__item">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/info__icon2.svg" alt="">
-					<p>Свыше 1 000 <br>мероприятий <br>за все время работы</p>
+					<p>Свыше 1 000 <br>мероприятий <br>за всё время работы</p>
 				</div>
 
 				<div class="info__item">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/info__icon1.svg" alt="">
-					<p>Более 500 000 часов <br>безупречной работы <br>устройств</p>
+					<p>Более 5000 часов <br>безупречной работы <br>устройств</p>
 				</div>
 
 			</div>

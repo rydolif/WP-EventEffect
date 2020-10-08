@@ -45,6 +45,6 @@
 		</div>
 		<div class="footer__copy">
 			<p>© Event-Effect. 2020</p>
-			<p><a href="<?php the_field('police', 'option'); ?>" target="_blank">Политику конфединциальности</a></p>
+			<p><a href="<?php the_field('police', 'option'); ?>" target="_blank">Политика конфединциальности</a></p>
 		</div>
 	</footer>

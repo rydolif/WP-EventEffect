@@ -525,7 +525,7 @@
 			font-size: 26px
 
 		span, b, strong
-			color: $accent
+			color: $accent !important
 
 	&__subtitle
 		max-width: 73%
@@ -1921,17 +1921,16 @@
 
 
 .additional
-	padding-bottom: 40px
+	padding-bottom: 15px
 
 	img
 		width: 100%
 		border-radius: 10px
 		box-shadow: 0 0 10px 0 rgba(#000, .4)
-		margin-bottom: 15px
+		margin-bottom: 10px
 
 		+r(576)
 			max-width: 320px
-			margin-bottom: 10px
 
 	&__title
 		@extend .director__title
@@ -1959,6 +1958,7 @@
 
 	&__item
 		width: 23%
+		margin-bottom: 25px
 
 		+r(767)
 			width: 48%
@@ -2435,3 +2435,5 @@
 
 		&:focus
 			box-shadow: 0 0 15px 0 rgba($accent, .5)
+
+
