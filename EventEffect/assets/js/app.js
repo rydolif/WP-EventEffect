@@ -229,8 +229,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		const sity = document.querySelector('.sity');
 		if (sity) {
 			var typed = new Typed(sity, {
-				strings: ["в Москве", "в Санкт Петербурге", "в Ярославле", "в Костроме", "в Твери", "в Туле", "в Нижнем Новгороде", "в Казани", "в Воронеже"],
-				typeSpeed: 200,
+				strings: ["в Москве", "в Санкт Петербурге", "в Ярославле",],
+				typeSpeed: 100,
 				backSpeed: 50,
 				shuffle: true,
 				smartBackspace: false,
@@ -241,8 +241,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		const tag_s = document.querySelector('.hero--services h1 span');
 		if (tag_s) {
 			var typed2 = new Typed(tag_s, {
-				strings: ["Корпоратив", "Выставку", "Промо мероприятие", "Event", "Свадьбу", "Спортивное мероприятие", "Выпускной", "День рождения"],
-				typeSpeed: 200,
+				strings: ["на Корпоратив", "на Выставку", "на Промо мероприятие", "на Event", "на Свадьбу", "на Выпускной", "на День рождения"],
+				typeSpeed: 100,
 				backSpeed: 50,
 				shuffle: true,
 				smartBackspace: false,
