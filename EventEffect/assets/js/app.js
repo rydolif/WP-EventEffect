@@ -250,8 +250,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 		}
 
-		// const tag_new = document.querySelector('.typed-cursor');
-		// tag_new.insertAdjacentHTML('afterend', '</br>');
+
 
 
 });

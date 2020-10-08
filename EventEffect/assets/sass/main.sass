@@ -1573,6 +1573,7 @@
 
 	&__img
 		width: 48%
+		+transition
 
 		+r(767)
 			width: 100%
@@ -1611,6 +1612,7 @@
 			align-items: center
 			flex-wrap: wrap
 			margin-bottom: 30px
+			+transition
 		
 		&_item
 			cursor: pointer
@@ -1618,12 +1620,18 @@
 			display: flex
 			align-items: center
 			font-weight: 700
+			+transition
 
 			+r(480)
 				width: 100%
 				margin-bottom: 20px
 				justify-content: center
 
+			&:hover,
+			&:focus
+
+				img
+					transform: scale(.95)
 
 			img
 				width: 100px
@@ -1631,6 +1639,7 @@
 				border-radius: 50%
 				margin-right: 20px
 				box-shadow: 0 0 20px 0 rgba($text, .4)
+				+transition
 
 				+r(992)
 					width: 60px
