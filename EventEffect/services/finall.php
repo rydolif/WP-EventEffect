@@ -14,7 +14,7 @@
 					$iframe = get_sub_field('iframe');
 					?>
 
-					<a data-fancybox href="<?php echo $iframe; ?>" class="swiper-slide" >
+					<a href="<?php echo $iframe; ?>" data-fancybox="gallery" class="swiper-slide" >
 						<img src="<?php echo $img; ?>" alt="">
 					</a>
 				<?php endwhile; ?>
