@@ -54,7 +54,7 @@
 
 			<div class="header__messenger">
 				<a href="<?php the_field('whatsapp', 'option'); ?>" target="_blank">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/whatsapp.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-whatsapp.svg" alt="">
 				</a>
 			</div>
 
