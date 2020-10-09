@@ -9,9 +9,9 @@
 	<link rel="icon" href="<?php the_field('favicon', 'option'); ?>">
 	<meta property="og:image" content="<?php the_field('preview', 'option'); ?>">
 
-	<?php wp_head(); ?>
-</head>
 
+</head>
+	<?php wp_head(); ?>
 <body>
 
 	<?php get_template_part( 'parts/header' ); ?>

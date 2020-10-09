@@ -10,8 +10,12 @@
 			</a>
 
 			<div class="footer__soc header__soc">
-				<a href="<?php the_field('instagram', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" alt=""></a>
-				<a href="<?php the_field('vk', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/vk.svg" alt=""></a>
+				<a href="<?php the_field('instagram', 'option'); ?>" target="_blank">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" alt="">
+				</a>
+				<a href="<?php the_field('vk', 'option'); ?>" target="_blank">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/vk.svg" alt="">
+				</a>
 			</div>
 
 			<nav class="footer__nav">
@@ -24,7 +28,9 @@
 			</nav>
 
 			<div class="footer__messenger">
-				<a href="<?php the_field('whatsapp', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/whatsapp.png" alt=""></a>
+				<a href="<?php the_field('whatsapp', 'option'); ?>" target="_blank">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/whatsapp.png" alt="">
+				</a>
 			</div>
 
 			<div class="footer__info">

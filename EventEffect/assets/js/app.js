@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
 						e.preventDefault();
 					}
 					modal.style.display = 'flex';
-					document.body.classList.add('modal--open')
+					document.body.classList.add('modal--open');
 				});
 			})
 	
