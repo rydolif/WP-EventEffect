@@ -15,7 +15,7 @@
 					?>
 
 					<a href="<?php echo $iframe; ?>" data-fancybox="gallery" class="swiper-slide" >
-						<img src="<?php echo $img; ?>" alt="">
+						<img src="<?php echo $img; ?>" alt="" class="finall__loader">
 					</a>
 				<?php endwhile; ?>
 

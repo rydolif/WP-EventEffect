@@ -2,10 +2,13 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
+	$.fancybox.defaults.backFocus = false;
+
 	//----------------------SLIDER-hero----------------------
 		var mySwiper = new Swiper('.partners__slider', {
 			slidesPerView: 2,
 			slidesPerColumn: 3,
+			loop: true,
 			pagination: {
 				el: '.partners__pagination',
 				clickable: 'true',

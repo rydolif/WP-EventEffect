@@ -14,7 +14,7 @@
 				<div class="question__block block">
 					<div class="question__header block__header">
 						<span></span>
-						<p><b><?php echo $title; ?>ос</b></p>
+						<p><b><?php echo $title; ?></b></p>
 					</div>
 					<div class="question__content block__content">
 						<p>
