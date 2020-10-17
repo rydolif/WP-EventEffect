@@ -29,22 +29,21 @@
 		</div>
 	</section>
 
-	<?php if( have_rows('finall', 'option') ): ?>
+	<?php if( have_rows('finall') ): ?>
 		<section class="finall">
 			<div class="container">
 
-				<h2 class="article__subtitle">Ещё больше фото! </h2>
+				<h2 class="article__subtitle">Ещё больше фото!</h2>
 
 				<div class="slider-services">
 					<div class="swiper-wrapper">
 
-					<?php while( have_rows('finall', 'option') ): the_row(); 
-						$img = get_sub_field('img', 'option');
-						$iframe = get_sub_field('iframe', 'option');
+					<?php while( have_rows('finall') ): the_row(); 
+						$img = get_sub_field('img');
+						$iframe = get_sub_field('iframe');
 						?>
-
 						<a data-fancybox href="<?php echo $iframe; ?>" class="swiper-slide" >
-							<img src="<?php echo $img; ?>" alt="">
+							<img src="<?php echo $img; ?>" alt="" class="finall__loader">
 						</a>
 					<?php endwhile; ?>
 
@@ -59,7 +58,7 @@
 	<?php endif; ?>
 
 	<div class="article__btn">
-		<a href="<?php echo get_home_url(); ?>/blog/" class="">Смотреть еще</a>
+		<!--- <a href="<?php echo get_home_url(); ?>/blog/" class="">Смотреть еще</a> -->
 	</div>
 
 <?php get_footer(); ?>

@@ -47,7 +47,7 @@
 				<?php endif; ?>
 
 				<a data-fancybox href="<?php the_field('iframe'); ?>" class="btn btn--play">
-					<span>Смотреть видео <br>о <?php the_title(); ?> </span>
+					<span><?php the_field('description__btn'); ?></span>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
 				</a>
 			</div>
