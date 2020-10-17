@@ -5,7 +5,7 @@
 	<section class="additional">
 		<div class="container">
 
-			<h2 class="additional__title">Что заказывают с <?php the_title(); ?></h2>
+			<h2 class="additional__title"><?php the_field('additional__title'); ?></h2>
 			<h3 class="additional__subtitle">Дополнительные платные услуги</h3>
 
 			<div class="additional__list">

@@ -4,7 +4,7 @@
 	<section class="work">
 		<div class="container">
 
-			<h2 class="work__title">Как работает <span><?php the_title(); ?></span> ?</h2>
+			<h2 class="work__title"><?php the_field('work__title'); ?></h2>
 
 			<div class="work__list">
 

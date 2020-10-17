@@ -5,7 +5,7 @@
 		<div class="parallax parallax__border"></div>
 		<div class="container">
 
-			<h2 class="included__title">В стоимость <?php the_title(); ?> включено:</h2>
+			<h2 class="included__title"><?php the_field('included__title'); ?></h2>
 
 			<div class="included__list">
 
